@@ -41,19 +41,26 @@ header{
     width: calc(100% / 10);
     border: 1px solid black;
     aspect-ratio: 1 / 1;
+    line-height: 100%;
+    text-align: center;
 }
 .cell_81{
     width: calc(100% / 9);
     border: 1px solid black;
     aspect-ratio: 1 / 1;
+    line-height: 100%;
+    text-align: center;
 }
 .cell_49{
     width: calc(100% / 7);
     border: 1px solid black;
     aspect-ratio: 1 / 1;
+    line-height: 100%;
+    text-align: center;
 }
 .active{
     background-color: var(--bg_selected);
+    color: white;
 }
 footer p{
     margin-left: 210px;

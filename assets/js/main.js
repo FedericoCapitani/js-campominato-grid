@@ -16,12 +16,24 @@ gioca.addEventListener('click', function(){
     
         for (let i = 1; i <= 100; i++){
             const cellItem = document.createElement(tag_name);
+            cellItem.append(`${i}`)
             cellItem.classList.add(class_name);
             cellsElement.append(cellItem);
         }
     }
     
     generateGrid('.cells', 'div', 'cell_100');
+    // sezioen selezione celle
+    const cells  = document.querySelectorAll('.cell_100')
+
+    for(let i = 0; i < cells.length; i++){
+        const cell = cells[i];
+
+        cell.addEventListener('click', function (){
+            console.log(this, i);
+            this.classList.add('active')
+        })
+    }
     }else if (difficolta == 2){
     // celle difficoltà 2
     function generateGrid(selector, tag_name, class_name){
@@ -29,12 +41,24 @@ gioca.addEventListener('click', function(){
     
         for (let i = 1; i <= 81; i++){
             const cellItem = document.createElement(tag_name);
+            cellItem.append(`${i}`)
             cellItem.classList.add(class_name);
             cellsElement.append(cellItem);
         }
     }
     
     generateGrid('.cells', 'div', 'cell_81');
+    // sezione selezione celle
+    const cells  = document.querySelectorAll('.cell_81')
+
+    for(let i = 0; i < cells.length; i++){
+        const cell = cells[i];
+
+        cell.addEventListener('click', function (){
+            console.log(this, i);
+            this.classList.add('active')
+        })
+    }
 
     }else if (difficolta == 3){
     // celle difficoltà 3
@@ -43,12 +67,24 @@ gioca.addEventListener('click', function(){
     
         for (let i = 1; i <= 49; i++){
             const cellItem = document.createElement(tag_name);
+            cellItem.append(`${i}`)
             cellItem.classList.add(class_name);
             cellsElement.append(cellItem);
         }
     }
     
     generateGrid('.cells', 'div', 'cell_49');
+    // funzione selezione celle
+    const cells  = document.querySelectorAll('.cell_49')
+
+    for(let i = 0; i < cells.length; i++){
+        const cell = cells[i];
+
+        cell.addEventListener('click', function (){
+            console.log(this, i);
+            this.classList.add('active')
+        })
+    }
     }
 });
 
