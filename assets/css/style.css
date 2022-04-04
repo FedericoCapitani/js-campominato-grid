@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg_main: #7fffd4;
+    --bg_selected: #6495ed;
+}
+.logo > h2{
+    font-size: 3rem;
+    margin-left: 200px;
+}
+
+.container{
+    background-color: var(--bg_main);
+    width: 1000px;
+    margin: 2rem auto;
+}
+
+footer p{
+    margin-left: 200px;
+}
