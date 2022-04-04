@@ -88,3 +88,9 @@ gioca.addEventListener('click', function(){
     }
 });
 
+// funzione per cancellare la griglia 
+const cancella = document.getElementById('reset')
+cancella.addEventListener('click', function(){
+    document.location.reload();
+})
+
