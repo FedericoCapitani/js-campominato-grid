@@ -30,10 +30,20 @@ header{
 }
 .container{
     background-color: var(--bg_main);
-    width: 1000px;
+    width: 800px;
     margin: 2rem auto;
+}
+.cells{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cell{
+    width: calc(100% / 10);
+    border: 1px solid black;
+    aspect-ratio: 1 / 1;
 }
 
 footer p{
     margin-left: 210px;
+    margin-bottom: 30px;
 }

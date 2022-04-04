@@ -3,3 +3,22 @@ con difficoltà 1 => tra 1 e 100
 con difficoltà 2 => tra 1 e 81
 con difficoltà 3 => tra 1 e 49
 Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro. */
+
+let gioca = document.getElementById('gioca');
+gioca.addEventListener('click', function(){
+
+    // celle difficoltà 1
+    function generateGrid(selector, tag_name, class_name){
+        const cellsElement = document.querySelector(selector)
+    
+        for (let i = 1; i < 100; i++){
+            const cellItem = document.createElement(tag_name);
+            cellItem.classList.add(class_name);
+            cellsElement.append(cellItem);
+        }
+    }
+    
+    generateGrid('.cells', 'div', 'cell');
+
+})
+
