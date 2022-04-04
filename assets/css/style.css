@@ -30,19 +30,31 @@ header{
 }
 .container{
     background-color: var(--bg_main);
-    width: 800px;
-    margin: 2rem auto;
 }
 .cells{
     display: flex;
     flex-wrap: wrap;
+    width: 800px;
+    margin: 2rem auto;
 }
-.cell{
+.cell_100{
     width: calc(100% / 10);
     border: 1px solid black;
     aspect-ratio: 1 / 1;
 }
-
+.cell_81{
+    width: calc(100% / 9);
+    border: 1px solid black;
+    aspect-ratio: 1 / 1;
+}
+.cell_49{
+    width: calc(100% / 7);
+    border: 1px solid black;
+    aspect-ratio: 1 / 1;
+}
+.active{
+    background-color: var(--bg_selected);
+}
 footer p{
     margin-left: 210px;
     margin-bottom: 30px;
