@@ -31,7 +31,7 @@ gioca.addEventListener('click', function(){
 
         cell.addEventListener('click', function (){
             console.log(this, i);
-            this.classList.add('active')
+            this.classList.toggle('active')
         })
     }
     }else if (difficolta == 2){
@@ -56,7 +56,7 @@ gioca.addEventListener('click', function(){
 
         cell.addEventListener('click', function (){
             console.log(this, i);
-            this.classList.add('active')
+            this.classList.toggle('active')
         })
     }
 
@@ -82,7 +82,7 @@ gioca.addEventListener('click', function(){
 
         cell.addEventListener('click', function (){
             console.log(this, i);
-            this.classList.add('active')
+            this.classList.toggle('active')
         })
     }
     }
