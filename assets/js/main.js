@@ -13,6 +13,7 @@ gioca.addEventListener('click', function(){
     // celle difficoltà 1
     function generateGrid(selector, tag_name, class_name){
         const cellsElement = document.querySelector(selector)
+        cellsElement.innerHTML = ''
     
         for (let i = 1; i <= 100; i++){
             const cellItem = document.createElement(tag_name);
@@ -38,6 +39,7 @@ gioca.addEventListener('click', function(){
     // celle difficoltà 2
     function generateGrid(selector, tag_name, class_name){
         const cellsElement = document.querySelector(selector)
+        cellsElement.innerHTML = ''
     
         for (let i = 1; i <= 81; i++){
             const cellItem = document.createElement(tag_name);
@@ -64,6 +66,7 @@ gioca.addEventListener('click', function(){
     // celle difficoltà 3
     function generateGrid(selector, tag_name, class_name){
         const cellsElement = document.querySelector(selector)
+        cellsElement.innerHTML = ''
     
         for (let i = 1; i <= 49; i++){
             const cellItem = document.createElement(tag_name);
@@ -88,9 +91,4 @@ gioca.addEventListener('click', function(){
     }
 });
 
-// funzione per cancellare la griglia 
-const cancella = document.getElementById('reset')
-cancella.addEventListener('click', function(){
-    document.location.reload();
-})
 
